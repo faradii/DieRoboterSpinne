@@ -1,0 +1,31 @@
+# Ignoriere alles im src-Ordner
+src/*
+
+# Beachte bestimmte Dateien im src-Ordner
+!src/App.js
+!src/App.css
+
+# Beachte bestimmte Ordner im src-Ordner
+!src/images/
+!src/leseappsounds/
+
+
+# Ignoriere weiterhin node_modules und andere unnötige Dateien
+node_modules/
+build/
+dist/
+public/
+
+# Ignoriere Umgebungsvariablen
+.env
+
+# Ignoriere Log-Dateien
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignoriere Editor- und Systemdateien
+.DS_Store
+.idea/
+.vscode/
+*.swp
