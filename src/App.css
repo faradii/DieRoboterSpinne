@@ -1,0 +1,39 @@
+.wrapper {
+  background-color: rgb(240, 236, 236);
+  height: 100vh;
+  width: 100vw;
+}
+.item {
+  text-align: center;
+}
+.omnidroid {
+  z-index: 1;
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  border-radius: 80px;
+  bottom: 100px;
+}
+.drag-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  max-width: 100vw;
+}
+.Button_auswahl {
+  width: 15vw;
+  height: 9vh;
+}
+
+.birnenimage {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.lesezone_divs {
+  height: 0px;
+  font-weight: 600;
+  color: #615f5f;
+  font-size: 2rem;
+}
