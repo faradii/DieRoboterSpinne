@@ -12,6 +12,7 @@ src/*
 
 # Ignoriere weiterhin node_modules und andere unnötige Dateien
 node_modules/
+.firebase/
 build/
 dist/
 public/

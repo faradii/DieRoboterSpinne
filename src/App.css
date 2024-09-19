@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: rgb(240, 236, 236);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
   width: 100vw;
 }
@@ -16,13 +16,9 @@
 }
 .drag-items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   max-width: 100vw;
-}
-.Button_auswahl {
-  width: 15vw;
-  height: 9vh;
 }
 
 .birnenimage {

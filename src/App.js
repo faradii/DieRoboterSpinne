@@ -7,21 +7,28 @@ import e from "./leseappsounds/E.mp3";
 import i from "./leseappsounds/I.mp3";
 import o from "./leseappsounds/O.mp3";
 import u from "./leseappsounds/U.mp3";
-import m from "./leseappsounds/M.mp3";
-import p from "./leseappsounds/P.mp3";
 
 import k from "./leseappsounds/K.mp3";
+// import ka from "./leseappsounds/KA.mp3";
 import l from "./leseappsounds/L.mp3";
+// import li from "./leseappsounds/li.mp3";
+// import lo from "./leseappsounds/lo.mp3";
+import m from "./leseappsounds/M.mp3";
+// import ma from "./leseappsounds/ma.mp3";
+// import mi from "./leseappsounds/mi.mp3";
+import p from "./leseappsounds/P.mp3";
+// import pa from "./leseappsounds/pa.mp3";
 
 import r from "./leseappsounds/R.mp3";
 import s from "./leseappsounds/S.mp3";
-import t from "./leseappsounds/T.mp3";
 
 import stille from "./leseappsounds/stille.mp3";
 
-//-------------------------Bilder------------------
+//-------------------------bilder------------------
 
-import raupe from "./images/omni1.jpg";
+import raupe from "./images/omni1.png";
+
+import kb from "./images/kb.jpg";
 
 import A from "./images/A.png";
 import E from "./images/E.png";
@@ -35,9 +42,7 @@ import P from "./images/P.gif";
 import R from "./images/R.jpg";
 import S from "./images/S.jpg";
 
-import T from "./images/T.png";
-
-import omnidroid from "./images/omni1.jpg";
+import omnidroid from "./images/omni1.png";
 
 import { Button } from "@mui/material";
 
@@ -50,25 +55,35 @@ function App() {
   ]);
   const audioRef = useRef();
   const soundData = [
-    { id: 1, name: "A", sound: a, image: A },
+    { id: 1, name: "D", sound: a, image: A, color: "#C0BFBBFF" },
+    { id: 2, name: "SP", sound: o, image: O, color: "#E39D35FF" },
+    { id: 3, name: "S", sound: u, image: U, color: "#E39D35FF" },
+    { id: 4, name: "E", sound: e, image: E, color: "#6CE335FF" },
+    { id: 5, name: "C", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 2, name: "E", sound: e, image: E },
-    { id: 3, name: "I", sound: i, image: I },
-    { id: 4, name: "O", sound: o, image: O },
-    { id: 5, name: "U", sound: u, image: U },
+    { id: 6, name: "B", sound: stille, image: kb, color: "#F87777FF" },
+    { id: 7, name: "P", sound: stille, image: kb, color: "#F87777FF" },
+    { id: 8, name: "Z", sound: stille, image: kb, color: "#802E2EFF" },
+    { id: 9, name: "I", sound: i, image: I, color: "#6CE335FF" },
+    { id: 10, name: "CK", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 6, name: "K", sound: k, image: K },
+    { id: 11, name: "T", sound: stille, image: kb, color: "#802E2EFF" },
+    { id: 12, name: "F", sound: stille, image: kb, color: "#35E3CCFF" },
+    { id: 13, name: "W", sound: stille, image: kb, color: "#35E3CCFF" },
+    { id: 14, name: "Y", sound: stille, image: M, color: "#6CE335FF" },
+    { id: 15, name: "G", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 7, name: "L", sound: l, image: L },
+    { id: 16, name: "M", sound: stille, image: kb, color: "#E335DAFF" },
+    { id: 17, name: "N", sound: stille, image: kb, color: "#C0BFBBFF" },
+    { id: 18, name: "U", sound: stille, image: kb, color: "#355DE3FF" },
+    { id: 19, name: "A", sound: stille, image: kb, color: "#355DE3FF" },
+    { id: 20, name: "K", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 8, name: "M", sound: m, image: M },
-
-    { id: 9, name: "P", sound: p, image: P },
-
-    { id: 10, name: "R", sound: r, image: R },
-
-    { id: 11, name: "S", sound: s, image: S },
-    { id: 12, name: "T", sound: t, image: T },
+    { id: 21, name: "CH", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 22, name: "SCH", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 24, name: "O", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 23, name: "ST", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 25, name: "X", sound: stille, image: kb, color: "#E3CC35FF" },
   ];
   const [currentSoundIndex, setCurrentSoundIndex] = useState(0);
   const currentSound = droppedItems[currentSoundIndex];
@@ -133,7 +148,9 @@ function App() {
         />
       </div>
 
-      {buttonGesperrt ? <img className="omnidroid" src={omnidroid} /> : null}
+      {buttonGesperrt ? (
+        <img className="omnidroid" src={omnidroid} alt="omni" />
+      ) : null}
       {/* lesezone----------------------------------------- */}
       <div
         onDrop={handleDrop}
@@ -183,7 +200,7 @@ function App() {
         </Button>
         {droppedItems.map((item, index) => (
           <div className="lesezone_divs" key={index}>
-            <img className="birnenimage" src={item.image} />
+            <img className="birnenimage" src={item.image} alt="zone" />
             <p className="item">{item.name}</p>
           </div>
         ))}
@@ -204,9 +221,11 @@ function App() {
               <Button
                 className="Button_auswahl"
                 style={{
-                  background: "#C9D668",
+                  width: "15vw",
+                  height: "10vh",
+                  background: item.color,
                   fontSize: "2em",
-                  color: "#605E5E",
+                  color: "#F2EDEDFF",
                 }}
                 variant="contained"
                 onClick={() => handlePlay(new Audio(item.sound))}
