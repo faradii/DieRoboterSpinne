@@ -74,7 +74,7 @@ function App() {
     { id: 22, name: "O", sound: o, image: O, color: "#EDD05AFF" },
     { id: 24, name: "F", sound: stille, image: kb, color: "#10795DFF" },
     { id: 23, name: "CH", sound: stille, image: kb, color: "#2A0A62FF" },
-    { id: 25, name: "", sound: stille, image: kb, color: "#FFFFFFFF" },
+    { id: 25, name: "Z", sound: stille, image: kb, color: "#A87FF4FF" },
 
     { id: 26, name: "IE", sound: stille, image: I, color: "#F87777FF" },
     { id: 27, name: "U", sound: u, image: U, color: "#EDD05AFF" },
