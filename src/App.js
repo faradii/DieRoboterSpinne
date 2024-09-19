@@ -1,24 +1,15 @@
 import React, { useRef, useState } from "react";
 import "./App.css";
 
-import ReplayIcon from "@mui/icons-material/Replay";
 import a from "./leseappsounds/A.mp3";
 import e from "./leseappsounds/E.mp3";
 import i from "./leseappsounds/I.mp3";
 import o from "./leseappsounds/O.mp3";
 import u from "./leseappsounds/U.mp3";
-
 import k from "./leseappsounds/K.mp3";
-// import ka from "./leseappsounds/KA.mp3";
 import l from "./leseappsounds/L.mp3";
-// import li from "./leseappsounds/li.mp3";
-// import lo from "./leseappsounds/lo.mp3";
 import m from "./leseappsounds/M.mp3";
-// import ma from "./leseappsounds/ma.mp3";
-// import mi from "./leseappsounds/mi.mp3";
 import p from "./leseappsounds/P.mp3";
-// import pa from "./leseappsounds/pa.mp3";
-
 import r from "./leseappsounds/R.mp3";
 import s from "./leseappsounds/S.mp3";
 
@@ -35,12 +26,7 @@ import E from "./images/E.png";
 import I from "./images/I.jpg";
 import O from "./images/O.jpg";
 import U from "./images/U.jpg";
-import K from "./images/K.jpg";
-import L from "./images/L.jpg";
 import M from "./images/M.gif";
-import P from "./images/P.gif";
-import R from "./images/R.jpg";
-import S from "./images/S.jpg";
 
 import omnidroid from "./images/omni1.png";
 
@@ -55,35 +41,47 @@ function App() {
   ]);
   const audioRef = useRef();
   const soundData = [
-    { id: 1, name: "D", sound: a, image: A, color: "#C0BFBBFF" },
-    { id: 2, name: "SP", sound: o, image: O, color: "#E39D35FF" },
-    { id: 3, name: "S", sound: u, image: U, color: "#E39D35FF" },
-    { id: 4, name: "E", sound: e, image: E, color: "#6CE335FF" },
-    { id: 5, name: "C", sound: stille, image: kb, color: "#E3CC35FF" },
+    { id: 1, name: "A", sound: a, image: A, color: "#7ECFCBFF" },
+    { id: 2, name: "B", sound: stille, image: O, color: "#E39D35FF" },
+    { id: 3, name: "C", sound: stille, image: U, color: "#355DE3FF" },
+    { id: 4, name: "L", sound: l, image: E, color: "#CFD3CDFF" },
+    { id: 5, name: "S", sound: s, image: kb, color: "#E3CC35FF" },
 
-    { id: 6, name: "B", sound: stille, image: kb, color: "#F87777FF" },
-    { id: 7, name: "P", sound: stille, image: kb, color: "#F87777FF" },
-    { id: 8, name: "Z", sound: stille, image: kb, color: "#802E2EFF" },
-    { id: 9, name: "I", sound: i, image: I, color: "#6CE335FF" },
-    { id: 10, name: "CK", sound: stille, image: kb, color: "#E3CC35FF" },
+    { id: 6, name: "EI", sound: stille, image: kb, color: "#7ECFCBFF" },
+    { id: 7, name: "P", sound: p, image: kb, color: "#E39D35FF" },
+    { id: 8, name: "G", sound: stille, image: kb, color: "#64A1DAFF" },
+    { id: 9, name: "M", sound: m, image: I, color: "#C0BFBBFF" },
+    { id: 10, name: "ST", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 11, name: "T", sound: stille, image: kb, color: "#802E2EFF" },
-    { id: 12, name: "F", sound: stille, image: kb, color: "#35E3CCFF" },
-    { id: 13, name: "W", sound: stille, image: kb, color: "#35E3CCFF" },
-    { id: 14, name: "Y", sound: stille, image: M, color: "#6CE335FF" },
-    { id: 15, name: "G", sound: stille, image: kb, color: "#E3CC35FF" },
+    { id: 11, name: "I", sound: i, image: kb, color: "#F87777FF" },
+    { id: 12, name: "D", sound: stille, image: kb, color: "#6FE335FF" },
+    { id: 13, name: "K", sound: k, image: kb, color: "#355DE3FF" },
+    { id: 14, name: "N", sound: stille, image: M, color: "#C0BFBBFF" },
+    { id: 15, name: "SP", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 16, name: "M", sound: stille, image: kb, color: "#E335DAFF" },
-    { id: 17, name: "N", sound: stille, image: kb, color: "#C0BFBBFF" },
-    { id: 18, name: "U", sound: stille, image: kb, color: "#355DE3FF" },
-    { id: 19, name: "A", sound: stille, image: kb, color: "#355DE3FF" },
-    { id: 20, name: "K", sound: stille, image: kb, color: "#E3CC35FF" },
+    { id: 16, name: "J", sound: stille, image: kb, color: "#F87777FF" },
+    { id: 17, name: "T", sound: stille, image: kb, color: "#6FE335FF" },
+    { id: 18, name: "Q", sound: stille, image: kb, color: "#355DE3FF" },
+    { id: 19, name: "R", sound: r, image: kb, color: "#2A0A62FF" },
+    { id: 20, name: "SCH", sound: stille, image: kb, color: "#E3CC35FF" },
 
-    { id: 21, name: "CH", sound: stille, image: kb, color: "#2A0A62FF" },
-    { id: 22, name: "SCH", sound: stille, image: kb, color: "#2A0A62FF" },
-    { id: 24, name: "O", sound: stille, image: kb, color: "#2A0A62FF" },
-    { id: 23, name: "ST", sound: stille, image: kb, color: "#2A0A62FF" },
-    { id: 25, name: "X", sound: stille, image: kb, color: "#E3CC35FF" },
+    { id: 21, name: "Y", sound: stille, image: kb, color: "#F87777FF" },
+    { id: 22, name: "O", sound: o, image: kb, color: "#EDD05AFF" },
+    { id: 24, name: "F", sound: stille, image: kb, color: "#10795DFF" },
+    { id: 23, name: "CH", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 25, name: "", sound: stille, image: kb, color: "#FFFFFFFF" },
+
+    { id: 26, name: "IE", sound: stille, image: kb, color: "#F87777FF" },
+    { id: 27, name: "U", sound: u, image: kb, color: "#EDD05AFF" },
+    { id: 28, name: "V", sound: stille, image: kb, color: "#10795DFF" },
+    { id: 29, name: "H", sound: stille, image: kb, color: "#2A0A62FF" },
+    { id: 30, name: "", sound: stille, image: kb, color: "#FFFFFFFF" },
+
+    { id: 31, name: "E", sound: e, image: kb, color: "#F87777FF" },
+    { id: 32, name: "EU", sound: stille, image: kb, color: "#EDD05AFF" },
+    { id: 33, name: "W", sound: stille, image: kb, color: "#10795DFF" },
+    { id: 34, name: "", sound: stille, image: kb, color: "#FFFFFFFF" },
+    { id: 35, name: "", sound: stille, image: kb, color: "#FFFFFFFF" },
   ];
   const [currentSoundIndex, setCurrentSoundIndex] = useState(0);
   const currentSound = droppedItems[currentSoundIndex];
@@ -139,6 +137,7 @@ function App() {
   // UI-------------------------------------------------------------
   return (
     <div className="wrapper">
+      <h1> Zieh die Buchstaben zur Roboterspinne!</h1>
       <div>
         <audio
           ref={audioRef}
@@ -167,12 +166,26 @@ function App() {
         }}
       >
         <div />
+        <h2
+          style={{
+            minWidth: "70px",
+            height: "75px",
+            background: "#7DAB34D1",
+            color: "white",
+            textAlign: "center",
+            borderRadius: "10px",
+            alignContent: "center",
+          }}
+        >
+          LOS
+        </h2>
         <Button
           className="raupe"
           style={{
-            width: "100vw",
+            width: "95vw",
             height: "200px",
             position: "absolute",
+            border: "2px solid grey",
           }}
           variant="text"
           color="primary"
@@ -181,22 +194,21 @@ function App() {
           }}
           disabled={buttonGesperrt}
         />
-
         <Button
           style={{
-            minWidth: "100px",
-            height: "100px",
+            minWidth: "70px",
+            height: "75px",
             position: "absolute",
             top: "55%",
             left: "50%",
-            background: "#7DAB34EB",
+            background: "#323131EB",
           }}
           variant="contained"
           onClick={() => {
             reset();
           }}
         >
-          <ReplayIcon fontSize="large" />
+          <h3>RESET</h3>
         </Button>
         {droppedItems.map((item, index) => (
           <div className="lesezone_divs" key={index}>
