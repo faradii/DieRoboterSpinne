@@ -27,6 +27,11 @@ import I from "./images/I.jpg";
 import O from "./images/O.jpg";
 import U from "./images/U.jpg";
 import M from "./images/M.gif";
+import K from "./images/K.jpg";
+import L from "./images/L.jpg";
+import P from "./images/P.gif";
+import R from "./images/R.jpg";
+import S from "./images/S.jpg";
 
 import omnidroid from "./images/omni1.png";
 
@@ -43,26 +48,26 @@ function App() {
   const soundData = [
     { id: 1, name: "A", sound: a, image: A, color: "#7ECFCBFF" },
     { id: 2, name: "B", sound: stille, image: kb, color: "#E39D35FF" },
-    { id: 3, name: "C", sound: stille, image: kb, color: "#355DE3FF" },
-    { id: 4, name: "L", sound: l, image: kb, color: "#CFD3CDFF" },
-    { id: 5, name: "S", sound: s, image: kb, color: "#E3CC35FF" },
+    { id: 3, name: "C", sound: stille, image: K, color: "#355DE3FF" },
+    { id: 4, name: "L", sound: l, image: L, color: "#CFD3CDFF" },
+    { id: 5, name: "S", sound: s, image: S, color: "#E3CC35FF" },
 
     { id: 6, name: "EI", sound: stille, image: kb, color: "#7ECFCBFF" },
-    { id: 7, name: "P", sound: p, image: kb, color: "#E39D35FF" },
+    { id: 7, name: "P", sound: p, image: P, color: "#E39D35FF" },
     { id: 8, name: "G", sound: stille, image: kb, color: "#64A1DAFF" },
     { id: 9, name: "M", sound: m, image: M, color: "#C0BFBBFF" },
     { id: 10, name: "ST", sound: stille, image: kb, color: "#E3CC35FF" },
 
     { id: 11, name: "I", sound: i, image: I, color: "#F87777FF" },
     { id: 12, name: "D", sound: stille, image: kb, color: "#6FE335FF" },
-    { id: 13, name: "K", sound: k, image: kb, color: "#355DE3FF" },
+    { id: 13, name: "K", sound: k, image: K, color: "#355DE3FF" },
     { id: 14, name: "N", sound: stille, image: kb, color: "#C0BFBBFF" },
     { id: 15, name: "SP", sound: stille, image: kb, color: "#E3CC35FF" },
 
     { id: 16, name: "J", sound: stille, image: I, color: "#F87777FF" },
     { id: 17, name: "T", sound: stille, image: kb, color: "#6FE335FF" },
-    { id: 18, name: "Q", sound: stille, image: kb, color: "#355DE3FF" },
-    { id: 19, name: "R", sound: r, image: kb, color: "#2A0A62FF" },
+    { id: 18, name: "Q", sound: stille, image: K, color: "#355DE3FF" },
+    { id: 19, name: "R", sound: r, image: R, color: "#2A0A62FF" },
     { id: 20, name: "SCH", sound: stille, image: kb, color: "#E3CC35FF" },
 
     { id: 21, name: "Y", sound: stille, image: I, color: "#F87777FF" },
